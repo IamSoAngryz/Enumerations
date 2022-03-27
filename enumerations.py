@@ -20,7 +20,7 @@ Accesare membri:
 - prin nume []
 - iterativ intr-un for
 """
-# class nume_clase_derivata(Nume_clasa_de_baza)
+# class nume_clasa_derivata(Nume_clasa_de_baza)
 from enum import Enum, unique
 
 @unique
@@ -30,13 +30,15 @@ class Color(Enum):
     GREEN = 3
     WHITE = 4
 
+
 print(Color.RED.name)
 print(Color.RED.value)
 print(Color.WHITE.value)
+
 for color in Color:
     print(color)
-print(f'Membrul cu caloarea 3: {Color(3)}')
-print(f'Membrul cu numele GREEN: {Color["GREEN"]}')
+print(f'Membru cu valoarea 1: {Color(3)}')
+print(f'Membru cu numele GREEN: {Color["GREEN"]}')
 
 for color in Color:
     print(color.name, ':', color.value)
